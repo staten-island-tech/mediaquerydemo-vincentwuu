@@ -103,12 +103,11 @@ body {
 .header {
   position: relative;
   height: 100vh;
-  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(69, 162, 158, 0.5)), to(rgba(102, 252, 241, 0.5))), url(../media/headphones-bg.jpg);
-  background-image: linear-gradient(to right bottom, rgba(69, 162, 158, 0.5), rgba(102, 252, 241, 0.5)), url(../media/headphones-bg.jpg);
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(69, 162, 158, 0.5)), to(rgba(102, 252, 241, 0.5))), url(../media/NYC.jpg);
+  background-image: linear-gradient(to right bottom, rgba(69, 162, 158, 0.5), rgba(102, 252, 241, 0.5)), url(../media/NYC.jpg);
   background-position: top;
   background-size: cover;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 8vh, 0% 100%);
-  clip-path: polygon(0 0, 100% 0, 100% 80vh, 0% 100%);
+  -webkit-clip-path: polygon(0% 24%, 100% 0%, 100% 73%, 0% 99%);
 }
 
 .header .text-box {
@@ -151,7 +150,7 @@ body {
   font-size: 4rem;
   text-shadow: 3px 3px #333;
   width: 80vw;
-  letter-spacing: 1rem;
+  letter-spacing: 0rem;
   text-align: center;
   margin: 0 auto;
 }
