@@ -91,6 +91,20 @@ body {
 }
 
 .one {
-  background-image: linear-gradient(to bottom right, );
+  background-image: linear-gradient(to bottom right, #33CCFF, #66FFFF);
   border-radius: 10px;
+  font-weight: 100;
+  padding: 20px;
+  transition: all 0.3s ease 0s;
 }
+
+.one:hover {
+    color: #404040;
+    font-weight: 700; 
+    letter-spacing: 3px;
+    background: none;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+}
+
