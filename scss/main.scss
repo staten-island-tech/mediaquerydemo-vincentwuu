@@ -67,18 +67,8 @@ body {
         letter-spacing: 2.2rem;
       }
     }
-    .heading-primary-sub {
-      font-size: 1.5rem;
-      width: 80vw;
-      margin: 0 auto;
-      text-align: center;
-      color: white;
-      @include laptop {
-        font-size: 3rem;
       }
     }
-  }
-}
 
 @keyframes slide-in {
   0% {
@@ -87,4 +77,20 @@ body {
   100% {
     transform: translateX(0);
   }
+}
+
+.btn {
+  background-color: white;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;  
+}
+
+.one {
+  background-image: linear-gradient(to bottom right, );
+  border-radius: 10px;
 }
