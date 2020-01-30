@@ -169,20 +169,6 @@ body {
   }
 }
 
-.header .heading-primary .heading-primary-sub {
-  font-size: 1.5rem;
-  width: 80vw;
-  margin: 0 auto;
-  text-align: center;
-  color: white;
-}
-
-@media (min-width: 900px) {
-  .header .heading-primary .heading-primary-sub {
-    font-size: 3rem;
-  }
-}
-
 @-webkit-keyframes slide-in {
   0% {
     -webkit-transform: translateX(-200rem);
@@ -203,5 +189,22 @@ body {
     -webkit-transform: translateX(0);
             transform: translateX(0);
   }
+}
+
+.btn {
+  background-color: white;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.one {
+  background-image: -webkit-gradient(linear, left top, right bottom, );
+  background-image: linear-gradient(to bottom right);
+  border-radius: 10px;
 }
 /*# sourceMappingURL=main.css.map */
