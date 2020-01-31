@@ -27,7 +27,7 @@ body {
   background-position: top;
   background-size: cover;
 
-  -webkit-clip-path: polygon(0% 24%, 100% 0%, 100% 73%, 0% 99%);
+  -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
 
   .text-box {
     position: absolute;
@@ -108,3 +108,27 @@ body {
     cursor: pointer;
 }
 
+.Pictures-Overlay {
+  position: relative;
+  height: 100vh;
+
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(color(dark), 0.5),
+    rgba(color(dark-sub), 0.5)
+  ),
+  url(../media/NYC2.jpg);
+background-position: top;
+background-size: cover;
+
+-webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+.Picture-Description {
+  width: 300px;
+  border: 15px solid white;
+  padding: 50px;
+  margin: 20px;
+  position: relative;
+  font-size: 3rem;
+}
