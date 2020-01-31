@@ -107,7 +107,7 @@ body {
   background-image: linear-gradient(to right bottom, rgba(69, 162, 158, 0.5), rgba(102, 252, 241, 0.5)), url(../media/NYC.jpg);
   background-position: top;
   background-size: cover;
-  -webkit-clip-path: polygon(0% 24%, 100% 0%, 100% 73%, 0% 99%);
+  -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
 }
 
 .header .text-box {
@@ -222,5 +222,24 @@ body {
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
   cursor: pointer;
+}
+
+.Pictures-Overlay {
+  position: relative;
+  height: 100vh;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(230, 100, 101, 0.5)), to(rgba(145, 152, 229, 0.5))), url(../media/NYC2.jpg);
+  background-image: linear-gradient(to right bottom, rgba(230, 100, 101, 0.5), rgba(145, 152, 229, 0.5)), url(../media/NYC2.jpg);
+  background-position: top;
+  background-size: cover;
+  -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+.Picture-Description {
+  width: 300px;
+  border: 15px solid white;
+  padding: 50px;
+  margin: 20px;
+  position: relative;
+  font-size: 3rem;
 }
 /*# sourceMappingURL=main.css.map */
