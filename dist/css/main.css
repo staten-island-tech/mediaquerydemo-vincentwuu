@@ -235,11 +235,15 @@ body {
 }
 
 .Picture-Description {
-  width: 300px;
-  border: 15px solid white;
-  padding: 50px;
-  margin: 20px;
-  position: relative;
-  font-size: 3rem;
+  font-size: 1.7vw;
+  padding: 2.5%;
+  max-width: 40%;
+  margin-left: 5%;
+  height: 20vh;
+  background-color: white;
+  border: 1.5rem;
+  text-align: center;
+  margin-top: 10%;
+  border: 1.5rem;
 }
 /*# sourceMappingURL=main.css.map */
