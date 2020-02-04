@@ -239,11 +239,15 @@ body {
   padding: 2.5%;
   max-width: 40%;
   margin-left: 5%;
-  height: 20vh;
-  background-color: white;
+  height: 10vh;
+  background-color: gray;
   border: 1.5rem;
   text-align: center;
   margin-top: 10%;
   border: 1.5rem;
+}
+
+.Package-Cards {
+  height: 100vh;
 }
 /*# sourceMappingURL=main.css.map */
