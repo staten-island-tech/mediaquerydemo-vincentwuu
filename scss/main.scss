@@ -11,7 +11,11 @@ html {
   } */
 }
 body {
-  background-color: color(black);
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(color(dark), 0.5),
+      rgba(color(dark-sub), 0.5)
+    ),
 }
 .header {
   position: relative;
@@ -112,16 +116,19 @@ body {
   position: relative;
   height: 100vh;
 
-  background-image: linear-gradient(
-    to right bottom,
-    rgba(color(dark), 0.5),
-    rgba(color(dark-sub), 0.5)
-  ),
-  url(../media/NYC2.jpg);
+  background-image: url(../media/NYC2.jpg);
 background-position: top;
 background-size: cover;
 
 -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+.Pictures_Overlay{
+	height: 110vh;
+	padding: 5rem;
+	margin-top: -15rem;
+	background-size: cover;
+	background-position: center;
 }
 
 .Picture-Description {
@@ -137,6 +144,32 @@ background-size: cover;
   border: 1.5rem;
 }
 
+.City-Pictures{
+  display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	flex-wrap: nowrap;
+	padding: 5rem;
+	transition: 1s all;
+	max-height: 45vh;
+	width: 53%;
+	margin-left: 40%;
+}
+
+.1{
+  max-width: 30%;
+	border: 1rem
+  
+}
+
 .Package-Cards{
   height: 100vh;
+  position: relative;
+}
+
+.Package-Row{
+  display: flex;
+  justify-content: space-around;
+  padding: 0rem;
+  margin: 0rem;
 }

@@ -97,7 +97,8 @@ html {
 }
 
 body {
-  background-color: #0b0c10;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(230, 100, 101, 0.5)), to(rgba(145, 152, 229, 0.5)));
+  background-image: linear-gradient(to right bottom, rgba(230, 100, 101, 0.5), rgba(145, 152, 229, 0.5));
 }
 
 .header {
@@ -227,11 +228,18 @@ body {
 .Pictures-Overlay {
   position: relative;
   height: 100vh;
-  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(230, 100, 101, 0.5)), to(rgba(145, 152, 229, 0.5))), url(../media/NYC2.jpg);
-  background-image: linear-gradient(to right bottom, rgba(230, 100, 101, 0.5), rgba(145, 152, 229, 0.5)), url(../media/NYC2.jpg);
+  background-image: url(../media/NYC2.jpg);
   background-position: top;
   background-size: cover;
   -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+.Pictures_Overlay {
+  height: 110vh;
+  padding: 5rem;
+  margin-top: -15rem;
+  background-size: cover;
+  background-position: center;
 }
 
 .Picture-Description {
@@ -247,7 +255,43 @@ body {
   border: 1.5rem;
 }
 
+.City-Pictures {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  padding: 5rem;
+  -webkit-transition: 1s all;
+  transition: 1s all;
+  max-height: 45vh;
+  width: 53%;
+  margin-left: 40%;
+}
+
+.1 {
+  max-width: 30%;
+  border: 1rem;
+}
+
 .Package-Cards {
   height: 100vh;
+  position: relative;
+}
+
+.Package-Row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 0rem;
+  margin: 0rem;
 }
 /*# sourceMappingURL=main.css.map */
