@@ -108,7 +108,7 @@ body {
   background-image: linear-gradient(to right bottom, rgba(69, 162, 158, 0.5), rgba(102, 252, 241, 0.5)), url(../media/NYC.jpg);
   background-position: top;
   background-size: cover;
-  -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
 }
 
 .header .text-box {
@@ -231,28 +231,32 @@ body {
   background-image: url(../media/NYC2.jpg);
   background-position: top;
   background-size: cover;
-  -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
 }
 
-.Pictures_Overlay {
-  height: 110vh;
+.Pictures-Overlay {
+  height: 90vh;
   padding: 5rem;
-  margin-top: -15rem;
+  margin-top: 0rem;
   background-size: cover;
   background-position: center;
+  position: relative;
 }
 
 .Picture-Description {
   font-size: 1.7vw;
   padding: 2.5%;
   max-width: 40%;
-  margin-left: 5%;
   height: 10vh;
-  background-color: gray;
-  border: 1.5rem;
+  background-color: white;
+  border: 1rem solid #cacaca;
   text-align: center;
-  margin-top: 10%;
-  border: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  font-style: italic;
 }
 
 .City-Pictures {
@@ -268,16 +272,51 @@ body {
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
   padding: 5rem;
-  -webkit-transition: 1s all;
-  transition: 1s all;
-  max-height: 45vh;
-  width: 53%;
-  margin-left: 40%;
 }
 
-.1 {
-  max-width: 30%;
-  border: 1rem;
+.city-landscape {
+  width: 30rem;
+  height: 30rem;
+  border-radius: 3rem;
+}
+
+.two {
+  border: 1rem solid #e0e0e0;
+  opacity: 0.8;
+}
+
+.two:hover {
+  -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  opacity: 1;
+}
+
+.three {
+  border: 1rem solid #e0e0e0;
+  opacity: 0.8;
+}
+
+.three:hover {
+  -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  opacity: 1;
+}
+
+.four {
+  border: 1rem solid #e0e0e0;
+  opacity: 0.8;
+}
+
+.four:hover {
+  -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  opacity: 1;
 }
 
 .Package-Cards {
