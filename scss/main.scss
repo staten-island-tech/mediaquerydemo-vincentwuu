@@ -123,12 +123,13 @@ background-size: cover;
 }
 
 .Pictures-Overlay{
-	height: 90vh;
-	padding: 5rem;
-	margin-top: 0rem;
-	background-size: cover;
-  background-position: center;
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  @include laptop {
+      height: 100vh;
+  }
 }
 
 .Picture-Description {
@@ -145,11 +146,17 @@ background-size: cover;
 }
 
 .City-Pictures{
+  width: 100%;
   display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-	flex-wrap: nowrap;
-	padding: 5rem;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+  @include laptop {
+      height: 60%;
+      width: 90%;
+      flex-direction: row;
+  }
 }
 
 .city-landscape {
@@ -190,6 +197,7 @@ background-size: cover;
   transition: all 0.3s ease 0s;
   opacity: 1;
 }
+
 
 .Package-Cards{
   height: 100vh;
