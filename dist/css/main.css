@@ -227,13 +227,6 @@ body {
 
 .Pictures-Overlay {
   position: relative;
-  height: 100vh;
-  background-image: url(../media/NYC2.jpg);
-  background-position: top;
-  background-size: cover;
-}
-
-.Pictures-Overlay {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -247,6 +240,9 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background-image: url(../media/NYC2.jpg);
+  background-position: top;
+  background-size: cover;
 }
 
 @media (min-width: 900px) {
@@ -256,10 +252,8 @@ body {
 }
 
 .Picture-Description {
-  font-size: 1.7vw;
-  padding: 2.5%;
-  max-width: 40%;
-  height: 10vh;
+  font-size: 2rem;
+  width: 0 auto;
   background-color: white;
   border: 1rem solid #cacaca;
   text-align: center;
@@ -293,6 +287,17 @@ body {
   .City-Pictures {
     height: 60%;
     width: 90%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+@media (min-width: 600px) {
+  .City-Pictures {
+    height: 50%;
+    width: 80%;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;

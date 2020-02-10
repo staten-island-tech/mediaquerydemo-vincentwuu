@@ -112,31 +112,23 @@ body {
     cursor: pointer;
 }
 
-.Pictures-Overlay {
-  position: relative;
-  height: 100vh;
-
-  background-image: url(../media/NYC2.jpg);
-background-position: top;
-background-size: cover;
-
-}
-
 .Pictures-Overlay{
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-image: url(../media/NYC2.jpg);
+  background-position: top;
+  background-size: cover;
   @include laptop {
       height: 100vh;
   }
 }
 
 .Picture-Description {
-  font-size: 1.7vw;
-  padding: 2.5%;
-  max-width: 40%;
-  height: 10vh;
+  font-size: 2rem;
+  width: 0 auto;
   background-color: white;
   border: 1rem solid rgb(202, 202, 202);
   text-align: center;
@@ -156,6 +148,11 @@ background-size: cover;
       height: 60%;
       width: 90%;
       flex-direction: row;
+  }
+  @include tablet {
+    height: 50%;
+    width: 80%;
+    flex-direction: row;
   }
 }
 
